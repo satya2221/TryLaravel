@@ -15,7 +15,13 @@ class CreateJawabanTable extends Migration
     {
         Schema::create('jawaban', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('isi');
+            $table->date('tanggal_buat');
+            $table->date('tanggal_perbarui');
+//            $table->bigInteger('profil_id');
+//            $table->foreign('profil_id')->references('id')->on('users');
+//            $table->bigInteger('pertanyaan_id');
+//            $table->foreign('pertanyaan_id')->references('id')->on('pertanyaan');
         });
     }
 

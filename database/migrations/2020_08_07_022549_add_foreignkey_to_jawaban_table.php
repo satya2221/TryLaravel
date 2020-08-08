@@ -14,7 +14,9 @@ class AddForeignkeyToJawabanTable extends Migration
     public function up()
     {
         Schema::table('jawaban', function (Blueprint $table) {
-            //
+            $table->foreignId('profil_id')->constrained('users');
+
+            $table->foreignId('pertanyaanya')->constrained('pertanyaan');
         });
     }
 
@@ -26,7 +28,11 @@ class AddForeignkeyToJawabanTable extends Migration
     public function down()
     {
         Schema::table('jawaban', function (Blueprint $table) {
-            //
+            $table->dropForeign(['pertanyaanya']);
+            $table->dropColumn(['pertanyaanya']);
+
+            $table->dropForeign(['profil_id']);
+            $table->dropColumn(['profil_id']);
         });
     }
 }

@@ -14,7 +14,10 @@ class AddForeignkeyToLikeDislikePertanyaanTable extends Migration
     public function up()
     {
         Schema::table('like_dislike_pertanyaan', function (Blueprint $table) {
-            //
+            $table->foreignId('profil_id')->constrained('users');
+            $table->foreignId('pertanyaan_id')->constrained('pertanyaan');
+
+            $table->primary(['profil_id','pertanyaan_id']);
         });
     }
 
@@ -26,7 +29,13 @@ class AddForeignkeyToLikeDislikePertanyaanTable extends Migration
     public function down()
     {
         Schema::table('like_dislike_pertanyaan', function (Blueprint $table) {
-            //
+            $table->dropPrimary(['profil_id','pertanyaan_id']);
+
+            $table->dropForeign(['pertanyaan_id']);
+            $table->dropColumn(['pertanyaan_id']);
+
+            $table->dropForeign(['profil_id']);
+            $table->dropColumn(['profil_id']);
         });
     }
 }

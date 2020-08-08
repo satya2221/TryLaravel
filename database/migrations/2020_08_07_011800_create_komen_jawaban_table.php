@@ -15,7 +15,12 @@ class CreateKomenJawabanTable extends Migration
     {
         Schema::create('komen_jawaban', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('isi');
+            $table->date('tanggal_buat');
+//            $table->bigInteger('profil_id');
+////            $table->foreign('profil_id')->references('id')->on('users');
+//            $table->bigInteger('jawaban_id');
+//            $table->foreign('jawaban_id')->references('id')->on('jawaban');
         });
     }
 

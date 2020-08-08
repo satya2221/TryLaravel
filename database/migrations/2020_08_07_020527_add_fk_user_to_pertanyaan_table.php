@@ -14,7 +14,9 @@ class AddFkUserToPertanyaanTable extends Migration
     public function up()
     {
         Schema::table('pertanyaan', function (Blueprint $table) {
-            //
+            $table->foreignId('profil_id')->constrained('users');
+
+            $table->foreignId('best_jawaban')->constrained('jawaban');
         });
     }
 
@@ -26,7 +28,10 @@ class AddFkUserToPertanyaanTable extends Migration
     public function down()
     {
         Schema::table('pertanyaan', function (Blueprint $table) {
-            //
+            $table->dropForeign(['best_jawaban']);
+            $table->dropColumn(['best_jawaban']);
+
+            $table->dropForeign(['profil_id']);
         });
     }
 }

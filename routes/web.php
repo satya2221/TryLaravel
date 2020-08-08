@@ -13,14 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@home');
+//Route::get('/', 'HomeController@home');
 
 Route::get('/register', 'AuthController@formnya');
 
 Route::post('/welcome', 'AuthController@welcome');
 
-Route::get('/hello/{namanya}', function ($namanya) {
-   return view('index',['namanya'=>$namanya]);
+//Route::get('/hello/{namanya}', function ($namanya) {
+//   return view('index',['namanya'=>$namanya]);
+//});
+
+Route::get('/', function () {
+   return view('items.home');
 });
 
-Route::get('/testControl','testController@jajal');
+Route::get('/data-tables', function () {
+   return view('items.data');
+});
+
+
+Route::get('/pertanyaan', 'PertanyaanController@index');
+
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+
+Route::post('/pertanyaan', 'PertanyaanController@store');
+
+Route::get('/pertanyaan/{pertanyaan_id}','PertanyaanController@show');
+
+Route::get('/pertanyaan/{pertanyaan_id}/edit','PertanyaanController@edit');
+
+Route::put('/pertanyaan/{pertanyaan_id}','PertanyaanController@update');
+
+Route::delete('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@destroy');
