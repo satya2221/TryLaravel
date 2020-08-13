@@ -19,31 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f89b686c-40ea-4554-a2a4-9a22520b2024" name="Default Changelist" comment="Tambah tugas templating blade">
+    <list default="true" id="f89b686c-40ea-4554-a2a4-9a22520b2024" name="Default Changelist" comment="update file error untuk templating, kemungkinan  migration dan CRUD">
+      <change afterPath="$PROJECT_DIR$/app/Pertanyaan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_09_072014_modify_jawaban_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blogKu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blogKu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PertanyaanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PertanyaanController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_001136_create_pertanyaan_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_001136_create_pertanyaan_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_011032_create_jawaban_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_011032_create_jawaban_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_011450_create_komen_pertanyaan_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_011450_create_komen_pertanyaan_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_011800_create_komen_jawaban_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_011800_create_komen_jawaban_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_012037_create_like_dislike_pertanyaan_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_012037_create_like_dislike_pertanyaan_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_012306_create_like_dislike_jawaban_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_012306_create_like_dislike_jawaban_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_020527_add_fk_user_to_pertanyaan_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_020527_add_fk_user_to_pertanyaan_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_022549_add_foreignkey_to_jawaban_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_022549_add_foreignkey_to_jawaban_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_023013_add_foreignkey_to_komen_pertanyaan_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_023013_add_foreignkey_to_komen_pertanyaan_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_023151_add_foreignkey_to_komen_jawaban_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_023151_add_foreignkey_to_komen_jawaban_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_023434_add_foreignkey_to_like_dislike_pertanyaan_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_023434_add_foreignkey_to_like_dislike_pertanyaan_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_024029_add_foreignkey_to_like_dislike_jawaban_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_024029_add_foreignkey_to_like_dislike_jawaban_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Layout/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Layout/parsial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Layout/parsial/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/items/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/items/data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/items/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/items/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pertanyaan/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pertanyaan/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pertanyaan/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pertanyaan/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pertanyaan/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pertanyaan/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pertanyaan/indexPertanyaan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pertanyaan/indexPertanyaan.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +151,9 @@
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fdRRVxaieyne9pz8CKsf6ggTKp" />
@@ -180,7 +168,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -213,8 +201,23 @@
       <workItem from="1596841212069" duration="3474000" />
       <workItem from="1596848438582" duration="16558000" />
       <workItem from="1596868250918" duration="871000" />
-      <workItem from="1596869213182" duration="1374000" />
+      <workItem from="1596869213182" duration="2687000" />
+      <workItem from="1596957195293" duration="1724000" />
+      <workItem from="1596964191222" duration="1707000" />
+      <workItem from="1597033253747" duration="312000" />
+      <workItem from="1597058668204" duration="1445000" />
+      <workItem from="1597067347147" duration="7312000" />
+      <workItem from="1597156281082" duration="3639000" />
+      <workItem from="1597207075378" duration="6362000" />
     </task>
+    <task id="LOCAL-00001" summary="update file error untuk templating, kemungkinan  migration dan CRUD">
+      <created>1596873309912</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596873309912</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,17 +238,22 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Tambah tugas templating blade" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tambah tugas templating blade" />
+    <MESSAGE value="update file error untuk templating, kemungkinan  migration dan CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="update file error untuk templating, kemungkinan  migration dan CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1596674090743">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1596674090743" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1596672602883">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597208754326">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596672602883" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1597208754326" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1597065582051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597065582051" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1596546056316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -254,6 +262,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="555" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1596584507104" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596873316556">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596873316556" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596872633353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

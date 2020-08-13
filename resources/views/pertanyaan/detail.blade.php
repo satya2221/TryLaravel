@@ -13,9 +13,11 @@
           <!-- /.card-header -->
           <div class="card-body" style="display: block;">
             <div class="row">
+                <div class="col-md-12">
                  <div class="form-group">
                   <label>Pertanyaan</label>
                      <input type="text" readonly class="form-control-plaintext" value=" {{$perlihatkan->isi}}">
+                </div>
                 </div>
             </div>
             <div class="row">
