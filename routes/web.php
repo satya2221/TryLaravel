@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', 'HomeController@home');
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/register', 'AuthController@formnya');
 
@@ -26,9 +28,9 @@ Route::post('/welcome', 'AuthController@welcome');
 //   return view('index',['namanya'=>$namanya]);
 //});
 
-Route::get('/', function () {
-   return view('items.home');
-});
+//Route::get('/', function () {
+//   return view('items.home');
+//});
 
 Route::get('/data-tables', function () {
    return view('items.data');
@@ -48,3 +50,7 @@ Route::get('/pertanyaan/{pertanyaan_id}/edit','PertanyaanController@edit');
 Route::put('/pertanyaan/{pertanyaan_id}','PertanyaanController@update');
 
 Route::delete('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@destroy');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

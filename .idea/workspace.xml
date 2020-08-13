@@ -19,16 +19,40 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f89b686c-40ea-4554-a2a4-9a22520b2024" name="Default Changelist" comment="update file error untuk templating, kemungkinan  migration dan CRUD">
-      <change afterPath="$PROJECT_DIR$/app/Pertanyaan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_09_072014_modify_jawaban_table.php" afterDir="false" />
+    <list default="true" id="f89b686c-40ea-4554-a2a4-9a22520b2024" name="Default Changelist" comment="Terapkan eloquent">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_13_030441_add_column_to_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/blogKu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blogKu.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PertanyaanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PertanyaanController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pertanyaan/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pertanyaan/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +178,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fdRRVxaieyne9pz8CKsf6ggTKp" />
@@ -168,7 +193,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test6" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -209,6 +234,7 @@
       <workItem from="1597067347147" duration="7312000" />
       <workItem from="1597156281082" duration="3639000" />
       <workItem from="1597207075378" duration="6362000" />
+      <workItem from="1597281143121" duration="6020000" />
     </task>
     <task id="LOCAL-00001" summary="update file error untuk templating, kemungkinan  migration dan CRUD">
       <created>1596873309912</created>
@@ -217,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596873309912</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Terapkan eloquent">
+      <created>1597281255830</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597281255830</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +272,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Tambah tugas templating blade" />
     <MESSAGE value="update file error untuk templating, kemungkinan  migration dan CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="update file error untuk templating, kemungkinan  migration dan CRUD" />
+    <MESSAGE value="Terapkan eloquent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Terapkan eloquent" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1596674090743">
@@ -250,10 +284,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1597208754326" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1597065582051">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1597286953136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597065582051" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1597286953136" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1597282215681">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597282215681" />
     <state x="349" y="155" key="IDE.errors.dialog" timestamp="1596546056316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -262,13 +300,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="555" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1596584507104" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596873316556">
+    <state x="599" y="282" key="VCS.EditChangelistDialog" timestamp="1597286746688">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596873316556" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596872633353">
+    <state x="599" y="282" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1597286746688" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597281261933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1596872633353" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597281261933" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597287106902">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1597287106902" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597286807291">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597286807291" />
   </component>
 </project>
